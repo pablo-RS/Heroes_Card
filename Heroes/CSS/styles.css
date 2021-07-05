@@ -1,0 +1,226 @@
+/*Roboto font import*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+/* Setting main styles for html document*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body styles*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* header styles*/
+
+header {
+  width: 100vw;
+  box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.top_header {
+  background-color: #d1891c;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.middle_header {
+  background-color: #00669f;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+main {
+  margin: 0 auto 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card {
+  margin-top: 5rem;
+  width: 30vw;
+}
+
+.card_pics {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heart {
+  position: absolute;
+  width: 2rem;
+  left: 1rem;
+  top: 1rem;
+}
+
+.main_bg {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+}
+
+.pic_profile {
+  position: absolute;
+  border-radius: 50%;
+  width: 8rem;
+  bottom: -3rem;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  background: #f3f3f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.name {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about {
+  margin-top: 1rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.btn {
+  background: rgba(0, 102, 160, 1);
+  color: white;
+  border: 0;
+  width: 10rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: rgba(0, 102, 159, 0.9);
+}
+
+.btn:active {
+  background: rgba(0, 102, 159, 1);
+}
+
+button.more_info {
+  position: fixed;
+  top: 50vh;
+  right: 1rem;
+  background: #00669f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 0;
+  width: 4rem;
+  height: 4rem;
+}
+button.more_info:hover {
+  background: rgba(0, 102, 160, 0.9);
+  cursor: pointer;
+}
+
+button.more_info:active {
+  background: rgba(0, 102, 170, 1);
+}
+
+.more_info img {
+  width: 50%;
+  height: auto;
+}
+
+.social_media {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2.5rem;
+  margin-top: 4rem;
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.social_media i {
+  font-size: 3rem;
+  transition: color 0.5s;
+}
+
+.fa-facebook-square {
+  color: #3b5999;
+}
+
+.fa-twitter-square {
+  color: #55acee;
+}
+
+.fa-google-plus-square {
+  color: #dd4b39;
+}
+
+.fa-instagram {
+  color: #e6683c;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #00669f;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+  width: 100vw;
+  margin-top: 5rem;
+}
+
+footer img {
+  width: 4rem;
+}
+
+/*=================================
+== RESPONSIVE STYLES FOR TABLETS ==
+=================================*/
+
+@media (max-width: 900px) {
+  * {
+    font-size: 12px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .item {
+    width: 60%;
+  }
+}
+
+/*=================================
+== RESPONSIVE STYLES FOR MOBILES ==
+=================================*/
+@media (max-width: 600px) {
+  * {
+    font-size: 10px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .item {
+    width: 70%;
+  }
+}
